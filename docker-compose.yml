@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: <Write your Dockerfile name here>
+    image: <Write your image name here>
+  client:
+    build:
+      context: .
+      dockerfile: <Write your Dockerfile name here>
+    image: <Write your image name here>
+    ports:
+      - "3000:80"
